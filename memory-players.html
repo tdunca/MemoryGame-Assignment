@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="javaScript.js" defer></script>
+  </head>
+
+  <body>
+    <main>
+      <section class="sidopanel">
+        <h2>Poäng</h2>
+        <p id="spelarnamn1">Spelare 1:</p>
+        <p id="score1">0</p>
+        <p id="spelarnamn2">Spelare 2:</p>
+        <p id="score2">0</p>
+        <h2>Historik</h2>
+        <span id="highScores-lista"></span>
+        <button class="points" onclick="resettaScore()" id="resettaScore">
+          Återställ Poängen
+        </button>
+        <button onclick="sparaOchAvsluta()" class="end">Avsluta Matchen</button>
+      </section>
+
+      <section class="spel">
+        <div class="kort" id="mario">
+          <img class="front" src="./bilder/1.jpg" />
+          <img class="back" src="./bilder/Logo.jpg" />
+        </div>
+        <div class="kort" id="mario">
+          <img class="front" src="./bilder/1.jpg" />
+          <img class="back" src="./bilder/Logo.jpg" />
+        </div>
+        <div class="kort" id="luigi">
+          <img class="front" src="./bilder/2.jpg" />
+          <img class="back" src="./bilder/Logo.jpg" />
+        </div>
+        <div class="kort" id="luigi">
+          <img class="front" src="./bilder/2.jpg" />
+          <img class="back" src="./bilder/Logo.jpg" />
+        </div>
+        <div class="kort" id="peach">
+          <img class="front" src="./bilder/3.jpg" />
+          <img class="back" src="./bilder/Logo.jpg" />
+        </div>
+        <div class="kort" id="peach">
+          <img class="front" src="./bilder/3.jpg" />
+          <img class="back" src="./bilder/Logo.jpg" />
+        </div>
+        <div class="kort" id="toad">
+          <img class="front" src="./bilder/4.jpg" />
+          <img class="back" src="./bilder/Logo.jpg" />
+        </div>
+        <div class="kort" id="toad">
+          <img class="front" src="./bilder/4.jpg" />
+          <img class="back" src="./bilder/Logo.jpg" />
+        </div>
+        <div class="kort" id="yoshi">
+          <img class="front" src="./bilder/5.jpg" />
+          <img class="back" src="./bilder/Logo.jpg" />
+        </div>
+        <div class="kort" id="yoshi">
+          <img class="front" src="./bilder/5.jpg" />
+          <img class="back" src="./bilder/Logo.jpg" />
+        </div>
+        <div class="kort" id="bowser">
+          <img class="front" src="./bilder/6.jpg" />
+          <img class="back" src="./bilder/Logo.jpg" />
+        </div>
+        <div class="kort" id="bowser">
+          <img class="front" src="./bilder/6.jpg" />
+          <img class="back" src="./bilder/Logo.jpg" />
+        </div>
+        <div class="kort" id="dk">
+          <img class="front" src="./bilder/7.jpg" />
+          <img class="back" src="./bilder/Logo.jpg" />
+        </div>
+        <div class="kort" id="dk">
+          <img class="front" src="./bilder/7.jpg" />
+          <img class="back" src="./bilder/Logo.jpg" />
+        </div>
+        <div class="kort" id="ghost">
+          <img class="front" src="./bilder/8.jpg" />
+          <img class="back" src="./bilder/Logo.jpg" />
+        </div>
+        <div class="kort" id="ghost">
+          <img class="front" src="./bilder/8.jpg" />
+          <img class="back" src="./bilder/Logo.jpg" />
+        </div>
+        <div class="kort" id="koppa">
+          <img class="front" src="./bilder/9.jpg" />
+          <img class="back" src="./bilder/Logo.jpg" />
+        </div>
+        <div class="kort" id="koppa">
+          <img class="front" src="./bilder/9.jpg" />
+          <img class="back" src="./bilder/Logo.jpg" />
+        </div>
+        <div class="kort" id="shroom">
+          <img class="front" src="./bilder/10.jpg" />
+          <img class="back" src="./bilder/Logo.jpg" />
+        </div>
+        <div class="kort" id="shroom">
+          <img class="front" src="./bilder/10.jpg" />
+          <img class="back" src="./bilder/Logo.jpg" />
+        </div>
+        <div class="kort" id="daisy">
+          <img class="front" src="./bilder/11.jpg" />
+          <img class="back" src="./bilder/Logo.jpg" />
+        </div>
+        <div class="kort" id="daisy">
+          <img class="front" src="./bilder/11.jpg" />
+          <img class="back" src="./bilder/Logo.jpg" />
+        </div>
+        <div class="kort" id="birdo">
+          <img class="front" src="./bilder/12.jpg" />
+          <img class="back" src="./bilder/Logo.jpg" />
+        </div>
+        <div class="kort" id="birdo">
+          <img class="front" src="./bilder/12.jpg" />
+          <img class="back" src="./bilder/Logo.jpg" />
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
