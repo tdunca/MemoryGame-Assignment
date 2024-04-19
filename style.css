@@ -56,7 +56,7 @@ main {
 
 .start {
 	width: 730px;
-	height: 450px;
+	height: 500px;
 	background-color: rgb(34, 35, 36);
 	display: flex;
 	flex-direction: column;
