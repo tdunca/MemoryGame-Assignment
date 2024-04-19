@@ -3,21 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>index</title>
+    <title>MEMORY-GAME</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+      rel="stylesheet"
+    />
     <script src="javaScript.js" defer></script>
   </head>
   <body>
     <main>
+		<video autoplay loop muted plays-inline class="back-video">
+        <source src="./bilder/bg2.mp4" type="video/mp4" />
+      </video>
+		<img class="header" src="./bilder/header.png" />
       <section class="players">
-        <p id="meny">Spela mot andra</p>
-        <label for="player-one">Namn: </label>
-        <input type="text" name="" placeholder="Spelare 1" id="player-one" />
-        <label for="player-two">Namn: </label>
-        <input type="text" name="" placeholder="Spelare 2" id="player-two" />
-        <span style="color: red" id="name-alert"></span>
-
-        <button onclick="sparaNamn()" id="starta">Starta spelet</button>
+        <p id="meny">PLAYER REGISTRATION</p>
+        <label for="player-one">PLAYER NAME ONE: </label>
+        <input type="text" name="" placeholder="" id="player-one" />
+        <label for="player-two">PLAYER NAME TWO: </label>
+        <input type="text" name="" placeholder="" id="player-two" />
+		<span id="name-alert"></span>
+        <button onclick="sparaNamn()" id="starta">START GAME</button>
+      </section>
       </section>
     </main>
   </body>

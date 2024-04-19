@@ -1,5 +1,5 @@
 let flippad = false;
-let stay = false; //låt  vara kvar
+let stay = false;
 let first, second;
 let spelarTur = 0;
 let nuvarandeSpelare = 1;
@@ -9,7 +9,7 @@ let playerOne = localStorage.getItem("PlayerOne");
 let playerTwo = localStorage.getItem("PlayerTwo");
 let highScores = [];
 
-// SPARA NAMN
+// SAVE NAMES
 
 function sparaNamn() {
   const playerOne = document.getElementById("player-one");
@@ -24,13 +24,13 @@ function sparaNamn() {
     alertSolo.innerHTML = "";
 
     const alert = document.createElement("p");
-
-    alert.textContent = `Ni måste ha glömt att fylla i era namn`;
+    alert.classList.add("alert");
+    alert.textContent = `NEED INPUT TO CONTINUE`;
     alertSolo.appendChild(alert);
   }
 }
 
-// HÄMTA NAMN
+// GET NAMES
 
 document.addEventListener("DOMContentLoaded", function () {
   let playerOne = localStorage.getItem("PlayerOne");
@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
 const kort = document.querySelectorAll(".kort");
 kort.forEach((kort) => kort.addEventListener("click", flip));
 
-//flippa korten
+//FLIP CARDS
 
 function flip() {
   if (stay) return;
@@ -101,13 +101,13 @@ function reset() {
   [first, second] = [null, null];
 }
 
-//randomisera korten
+//RANDOMIZE CARDS
 kort.forEach(function (kort) {
   let randomNum = Math.floor(Math.random() * 12);
   kort.style.order = randomNum;
 });
 
-//Score
+//SCORE
 function uppdateraScore(matchning) {
   if (matchning) {
     if (nuvarandeSpelare === 1) {
@@ -140,7 +140,7 @@ function uppdateraSidansScore(spelareEttScore, spelareTvaScore) {
   document.getElementById("score2").innerText = spelareTvaScore;
 }
 
-// Spara och Visa poäng
+// SAVE AND SHOW SCORES
 function uppdateraHighScores(
   playerOne,
   spelareEttScore,
@@ -178,7 +178,7 @@ function visaHighScores() {
   });
 }
 
-// RESETTA POÄNGEN
+// RESET POINTS
 
 function resettaScore() {
   let nuvarandeSpelare = 1;
@@ -201,7 +201,7 @@ function resettaScore() {
   });
 }
 
-// Kolla vem som vinner
+// CHECK FOR WINNER
 function checkWinner() {
   const oflippadeKort = Array.from(
     document.querySelectorAll(".kort:not(.flip)")
@@ -225,7 +225,7 @@ function checkWinner() {
     }, 5000);
   }
 }
-// AVSLUTA MATCHEN
+// END GAME
 
 function sparaOchAvsluta() {
   if (spelareEttScore != 0 && spelareTvaScore != 0) {

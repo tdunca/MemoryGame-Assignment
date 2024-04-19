@@ -3,15 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>index</title>
+    <title>MEMORY-GAME</title>
     <link rel="stylesheet" href="style.css" />
     <script src="javaScript.js" defer></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <main>
+      <video autoplay loop muted plays-inline class="back-video">
+        <source src="./bilder/bg2.mp4" type="video/mp4" />
+      </video>
+      <img class="header" src="./bilder/header.png" />
       <section class="start">
-        <p id="meny">Meny</p>
-        <a href="./name-players.html" class="select">Spela mot andra</a>
+        <p id="meny">MAIN MENU</p>
+
+        <a href="./name-players.html" class="select">
+          <img class="star" src="./bilder/star.png" />
+          <img class="pvp" src="./bilder/pvp.png" />
+          PLAYER VS PLAYER</a
+        >
       </section>
     </main>
   </body>
