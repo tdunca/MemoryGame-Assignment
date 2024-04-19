@@ -55,7 +55,7 @@ main {
 /*MENU*/
 
 .start {
-	width: 735px;
+	width: 730px;
 	height: 450px;
 	background-color: rgb(34, 35, 36);
 	display: flex;
@@ -126,12 +126,13 @@ main {
 
 .select:hover .star {
 	display: none ;
+
 }
 
 
 /*MENU-PLAYERS*/
 .players {
-	width: 735px;
+	width: 730px;
 	height: 500px;
 	background-color: rgb(34, 35, 36);
 	display: flex;
