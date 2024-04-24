@@ -13,7 +13,7 @@ Create a memory game according to the following requirements:
 - The game must contain at least 12 memory pairs
 - Create a HighScore that is saved in localStorage
 - The app must place the memory cards in a random order when the game starts
-- Each player must be take turns choosing their cards
-  -a. If the cards are a pair, the player recieves a point and gets to take another turn
-  -b. If the cards are not a pair, the cards flip back to their original position and the turn passes over to the opponent
+- Each player must be take turns choosing their cards:
+a.   If the cards are a pair, the player recieves a point and gets to take another turn
+b.   If the cards are not a pair, the cards flip back to their original position and the turn passes over to the opponent
 - The player with the most points in the end, wins the game
