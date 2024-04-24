@@ -17,8 +17,7 @@ body {
 
 @media screen and (prefers-color-scheme: dark) {
 	body {
-		background-color: none;
-		color: black;
+		background-color: transparent;
 	}
 }
 
