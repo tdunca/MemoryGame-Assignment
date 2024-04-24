@@ -234,3 +234,5 @@ function sparaOchAvsluta() {
 
   window.location.href = "./index.html";
 }
+
+//DARKREADER
