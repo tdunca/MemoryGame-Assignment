@@ -15,7 +15,7 @@ body {
 	flex-direction: column;
 }
 
-@media screen and (prefers-color-scheme: dark) {
+@media screen and (prefers-color-scheme: light){
 	body {
 		background-color: transparent !important;
 	}
