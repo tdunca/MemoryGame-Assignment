@@ -290,14 +290,15 @@ main {
 
 /*SIDEPANEL-BUTTON*/
 .panel-buttons {
-	position: absolute;
+	position: relative;
     display: flex ;
 	flex-direction: column;
 	align-self: center;
 	justify-self: flex-end;
-	row-gap: 10px;
+	margin-top: 600px;
+	/*row-gap: 10px;
 	bottom: 5rem;
-	right: 26.5rem;
+	right: 26.5rem;*/
 }
 .points {
 	width: 200px;
